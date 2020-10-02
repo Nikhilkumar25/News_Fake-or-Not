@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/news_feed_item"
+        android:title="News Feed"
+        android:icon="@drawable/ic_baseline_notes_24"
+        android:enabled="true"/>
+    <item android:enabled="true"
+        android:id="@+id/new_news_upload_item"
+        android:icon="@drawable/ic_baseline_post_add_24"
+        android:title="Add News"/>
+    <item
+        android:id="@+id/user_item"
+        android:title="Profile"
+        android:icon="@drawable/ic_baseline_person_outline_24"
+        android:enabled="true"/>
+
+</menu>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">News Fake or Not</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signup_with_mobile_number">SignUp with Mobile Number</string>
+    <string name="title_activity_splashscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="signup_with_email">SignUp with Email</string>
+    <string name="signin_with_email">Sign In with Email</string>
+</resources>

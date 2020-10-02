@@ -1,0 +1,60 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.wordpress.smartedudotin.www.newsfakeornot"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //lottie for animations
+    implementation "com.airbnb.android:lottie:3.4.2"
+
+    //for auth
+    implementation 'com.google.firebase:firebase-auth:19.4.0'
+
+    //parse SDK
+    implementation "com.github.parse-community.Parse-SDK-Android:parse:1.18.5"
+
+    def nav_version = "2.3.0"
+
+    // Java language implementation Navigation
+    implementation "androidx.navigation:navigation-fragment:$nav_version"
+    implementation "androidx.navigation:navigation-ui:$nav_version"
+
+    // Testing Navigation
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+
+    //fancy toast
+    implementation 'com.github.Shashank02051997:FancyToast-Android:0.1.8'
+
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+
+}

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.AuthActivity">
+
+<!--    <fragment-->
+
+<!--        android:id="@+id/authFragment"-->
+<!--        android:name="androidx.navigation.fragment.NavHostFragment"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        app:defaultNavHost="true"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:navGraph="@navigation/auth_nav_graph" />-->
+
+
+
+    <!--    SignUp Frag-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/signUpFragment">
+
+        <TextView
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/signup_with_email" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text=" " />
+
+<!--        <EditText-->
+<!--            android:id="@+id/registrationUsername"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:textSize="23sp"-->
+<!--            android:inputType="textEmailAddress"-->
+<!--            android:hint="Enter Username"/>-->
+
+        <EditText
+            android:layout_marginVertical="10dp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:id="@+id/registrationEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="23sp"
+            android:inputType="textEmailAddress"
+            android:hint="Enter Email"/>
+
+
+        <EditText
+            android:layout_marginVertical="1dp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:id="@+id/registrationPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:inputType="textPassword"
+            android:hint="Set Password"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" ( must contain a capital letter, lowercase letter, a number and be at least 8 characters long)"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=" " />
+
+        <Button
+            android:id="@+id/signUpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SignUp"
+            android:background="@drawable/button_design"/>
+
+
+
+        <Button
+            android:layout_marginTop="10dp"
+            android:id="@+id/toSignInFrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
+            android:text="Already Have An Account/ SignIn"/>
+    </LinearLayout>
+
+
+
+    <!--    SignIn Frag-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/signInFragment"
+        android:visibility="gone">
+
+        <TextView
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text="@string/signin_with_email" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:text=" " />
+
+        <EditText
+            android:layout_marginVertical="10dp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:id="@+id/registeredUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:inputType="textEmailAddress"
+            android:hint="Enter Email"/>
+        <EditText
+            android:layout_marginVertical="10dp"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:id="@+id/registeredPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:inputType="textPassword"
+            android:hint="Enter Password"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text=" " />
+
+        <Button
+            android:id="@+id/signInBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
+            android:text="SignIn"/>
+        <Button
+            android:gravity="right"
+            android:layout_marginTop="5dp"
+            android:id="@+id/forgotPassBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:text="ForgotPassword"/>
+
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/toSignUpFrag"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_design"
+
+            android:text="Create An Account/ SignIn"/>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

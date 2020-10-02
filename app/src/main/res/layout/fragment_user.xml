@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserFragment"
+    android:orientation="vertical"
+    android:layout_marginTop="30dp"
+    android:gravity="center_horizontal">
+
+    <ImageView
+        android:src="@drawable/empty_profile_img"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp"
+        android:id="@+id/user_image"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="user_name"
+        android:textSize="21sp"
+        android:textColor="#000"
+        android:layout_margin="5dp"
+        android:id="@+id/user_name"/>
+
+    <TextView
+        android:layout_margin="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/user_email"
+        android:textSize="19sp"
+        android:textColor="#000"
+        android:text="email"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LogOut"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/button_design"
+        android:id="@+id/logoutBtn"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Reset Password  "
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/button_design"
+        android:id="@+id/reset_password"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:text="(click on image and name to update them)"/>
+
+</LinearLayout>
